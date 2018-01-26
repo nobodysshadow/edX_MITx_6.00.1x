@@ -5,6 +5,7 @@ Created on Wed Jun  8 11:07:33 2016
 @author: ericgrimson
 """
 
+x = int(input('Enter an integer: '))
 if x%2 == 0:
     if x%3 == 0:
         print('Divisible by 2 and 3')
