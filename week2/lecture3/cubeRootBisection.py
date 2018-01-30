@@ -5,7 +5,7 @@ Created on Wed Jun  8 12:08:31 2016
 @author: ericgrimson
 """
 
-cube = 54
+cube = 27
 epsilon = 0.01
 num_guesses = 0
 low = 0
