@@ -140,3 +140,23 @@ print(json.dumps(my_mapping, indent=4, sort_keys=True))
 # primitive types (check out the "pprint" module):
 json.dumps({all: 'yup'})
 # TypeError: keys must be a string
+
+"""
+Real Python Mail from 2018-02-07
+[🐍PyTricks]
+"""
+# Why Python Is Great:
+# Function argument unpacking
+
+def myfunc(x, y, z):
+    print(x, y, z)
+
+tuple_vec = (1, 0, 1)
+dict_vec = {'x': 1, 'y': 0, 'z': 1}
+
+myfunc(*tuple_vec)
+# 1, 0, 1
+myfunc(**dict_vec)
+# 1, 0, 1
+# Interessting usage of tuple and dictionary as function arguments
+
