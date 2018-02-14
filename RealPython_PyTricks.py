@@ -81,7 +81,7 @@ Real Python Mail from 2018-01-31
 # Using namedtuple is way shorter than
 # defining a class manually:
 from collections import namedtuple
-Car = namedtup1e('Car', 'color mileage')
+Car = namedtuple('Car', 'color mileage')
 # Our new "Car" class works as expected:
 my_car = Car('red', 3812.4)
 print(my_car.color)
@@ -174,3 +174,24 @@ timeit.timeit('"-".join([str(n) for n in range(100)])',number=10000)
 # >>> 0.2996307989997149
 timeit.timeit('"-".join(map(str, range(100)))',number=10000)
 # >>> 0.24581470699922647
+
+
+"""
+Real Python Mail from 2018-02-13
+[🐍PyTricks]
+"""
+# Why Python Is Great:
+# In-place value swapping
+# Let's say we want to swap
+# the values of a and b...
+a = 23
+b = 42
+# The "classic" way to do it
+# with a temporary variable:
+tmp = a
+a = b
+b = tmp
+# Python also lets us
+# use this short-hand:
+a, b = b, a
+####
